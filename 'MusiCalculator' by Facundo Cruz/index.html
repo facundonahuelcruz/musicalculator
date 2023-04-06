@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusiCalculator</title>
+<!--bootstrap library, JUST FOR ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <h1 id="title">MusiCalculator!</h1>
+    <h2 id="subtitle">HINT: Press any number to reproduce a sound in <a id="major-link" href="https://en.wikipedia.org/wiki/Major_scale" target="_blank">Major scale.</a></h2>
+
+<div class="calculator">
+    <div class="screen">0</div>
+<!--buttons displayed in the calculator-->
+        <button id="clear" class="calculator-button">C</button>
+        <button id="delete" class="calculator-button">←</button>
+        <button class="calculator-button">/</button>
+        <button class="calculator-button">*</button>
+        <button class="calculator-button" onclick="clickSeven.play();">7</button>
+        <button class="calculator-button" onclick="clickEight.play();">8</button>
+        <button class="calculator-button" onclick="clickNine.play();">9</button>
+        <button class="calculator-button">-</button>
+        <button class="calculator-button" onclick="clickFour.play();">4</button>
+        <button class="calculator-button" onclick="clickFive.play();">5</button>
+        <button class="calculator-button" onclick="clickSix.play();">6</button>
+        <button class="calculator-button">+</button>
+        <button class="calculator-button" onclick="clickOne.play();">1</button>
+        <button class="calculator-button" onclick="clickTwo.play();">2</button>
+        <button class="calculator-button" onclick="clickThree.play();">3</button>
+        <button id="equal" class="calculator-button">=</button>
+        <button id="zero" class="calculator-button" onclick="clickZero.play();">0</button>
+        <button class="calculator-button">.</button>
+</div> 
+
+<!--code n portfolio section-->
+<div class="social-container">
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><p class="social"><i class="bi bi-github"></i> Psst... check the code!</p></a>
+    <a href="facundonahuelcruz.github.io" target="_blank"><p class="social">Or go back to the portfolio.</p></a>
+</div>
+
+<!--just the footer, mentioning me-->
+<footer>
+    <p id="footer">Code & SFX designed by <a id="footer-link" href="https://www.linkedin.com/in/devcruz/" target="_blank">Facundo Nahuel Cruz</a></p>
+</footer>
+
+<!--buttons sfx (i did this script here cuz was more comfortable for me)-->
+<script type="text/javascript">
+    const clickZero = new Audio();{
+        clickZero.src = "./sfx/note0.wav"
+    }
+    const clickOne = new Audio();{
+        clickOne.src = "./sfx/note1.wav"
+    }
+    const clickTwo = new Audio();{
+        clickTwo.src = "./sfx/note2.wav"
+    }
+    const clickThree = new Audio();{
+        clickThree.src = "./sfx/note3.wav"
+    }
+    const clickFour = new Audio();{
+        clickFour.src = "./sfx/note4.wav"
+    }
+    const clickFive = new Audio();{
+        clickFive.src = "./sfx/note5.wav"
+    }
+    const clickSix = new Audio();{
+        clickSix.src = "./sfx/note6.wav"
+    }
+    const clickSeven = new Audio();{
+        clickSeven.src = "./sfx/note7.wav"
+    }
+    const clickEight = new Audio();{
+        clickEight.src = "./sfx/note8.wav"
+    }
+    const clickNine = new Audio();{
+        clickNine.src = "./sfx/note9.wav"
+    }
+</script>
+
+<!--calculator mechanism script-->
+    <script src="./script.js"></script>
+</body>
+</html>

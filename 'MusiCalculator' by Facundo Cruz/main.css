@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Neucha&display=swap');
+
+/*padding and margin reset*/
+* {
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100%;
+    background-image: linear-gradient(rgb(78, 49, 170), rgb(70, 16, 120));
+    display: grid;
+    place-items: center;
+}
+
+#title{
+    font-family: 'Neucha', cursive;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+}
+
+#subtitle{
+    font-family: 'Neucha', cursive;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+#major-link{
+    color: white;
+    transition: .2s;
+    isolation: isolate;
+}
+
+#major-link:hover{
+    color: rgb(72, 110, 214);
+}
+
+.calculator {
+    background-color: rgb(78, 49, 170);
+    color: white;
+    width: 640px;
+    max-width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.screen {
+    width: 578px;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 60px;
+    text-align: right;
+    background-color: rgb(70, 16, 120);
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    grid-column: 1 / -1;
+    word-break: break-all;
+}
+
+.calculator-button {
+    background-color: rgb(78, 49, 170);
+    font-family: 'Neucha', cursive;
+    font-size: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0;
+    transition: .2s;
+    isolation: isolate;
+}
+
+.calculator-button:hover {
+    background-color: rgb(70, 16, 120);
+}
+
+#zero {
+    grid-column: span 2;
+}
+
+#clear{
+    background-color: rgb(38, 83, 205);
+}
+
+#clear:hover{
+    background-color: rgb(72, 110, 214);
+}
+
+#equal {
+    grid-row: span 2;
+    background-color: rgb(38, 83, 205);
+}
+
+#equal:hover{
+    background-color: rgb(72, 110, 214);
+}
+
+.social-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social{
+    font-family: 'Neucha', cursive;
+    font-size: 25px;
+    color: white;
+    transition: .2s;
+    isolation: isolate;
+    margin-top: 20px;
+}
+
+.social:hover{
+    color: rgb(72, 110, 214);
+}
+
+#footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgba(97, 97, 97, 0.664);
+    margin-top: 15%;
+}
+
+#footer-link{
+    color: rgba(97, 97, 97, 0.664);
+    transition: .2s;
+    isolation: isolate;
+}
+
+#footer-link:hover{
+    color: rgb(72, 110, 214);
+}
